@@ -61,6 +61,7 @@ func main() {
 		fmt.Printf("Error starting server: %v\n", err)
 		return // Stop the program here so it doesn't crash later
 	}
+	fmt.Printf("Started Server")
 	//Create a channel for connections
 	conns := make(chan net.Conn)
 	//Create a channel for messages
